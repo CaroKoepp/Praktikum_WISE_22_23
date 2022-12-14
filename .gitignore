@@ -1,3 +1,30 @@
+Blatt1/.idea/
+Blatt2/.idea/
+Blatt3/.idea/
+Blatt4/.idea/
+Blatt5/.idea/
+Blatt6/.idea/
+Blatt7/.idea/
+Blatt8/.idea/
+Blatt9/.idea/
+Blatt10/.idea/
+Blatt11/.idea/
+Blatt12/.idea/
+Blatt13/.idea/
+/.idea/.gitignore
+
+.idea/
+
+
+*.dev
+*.layout
+*.vcxproj
+*.user
+*.filters
+*.sln
+*.win
+*.pdf
+
 # Prerequisites
 *.d
 
@@ -30,3 +57,21 @@
 *.exe
 *.out
 *.app
+
+
+/Blatt 2/ConsoleApplication1/Debug/
+/Blatt 2/ConsoleApplication1/.vs/
+/Blatt 2/ConsoleApplication1/Release/
+/Blatt 4/Blatt4/.vs/
+/Blatt 4/Blatt4/Debug/
+/Blatt 4/Blatt4/Release/
+/Blatt5/cmake-build-debug/
+/Blatt6/cmake-build-debug/
+/Blatt7/cmake-build-debug/
+/Blatt8/cmake-build-debug/
+
+/Blatt9/cmake-build-debug/
+/Blatt10/cmake-build-debug/
+/Blatt11/cmake-build-debug/
+/Blatt12/cmake-build-debug/
+/Blatt13/cmake-build-debug/
