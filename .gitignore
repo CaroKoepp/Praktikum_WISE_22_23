@@ -1,21 +1,4 @@
-Blatt1/.idea/
-Blatt2/.idea/
-Blatt3/.idea/
-Blatt4/.idea/
-Blatt5/.idea/
-Blatt6/.idea/
-Blatt7/.idea/
-Blatt8/.idea/
-Blatt9/.idea/
-Blatt10/.idea/
-Blatt11/.idea/
-Blatt12/.idea/
-Blatt13/.idea/
-/.idea/.gitignore
-
-.idea/
-
-
+#useless files
 *.dev
 *.layout
 *.vcxproj
@@ -24,6 +7,7 @@ Blatt13/.idea/
 *.sln
 *.win
 *.pdf
+/.idea/.gitignore
 
 # Prerequisites
 *.d
@@ -58,7 +42,7 @@ Blatt13/.idea/
 *.out
 *.app
 
-
+#useless folders
 /Blatt 2/ConsoleApplication1/Debug/
 /Blatt 2/ConsoleApplication1/.vs/
 /Blatt 2/ConsoleApplication1/Release/
@@ -75,3 +59,19 @@ Blatt13/.idea/
 /Blatt11/cmake-build-debug/
 /Blatt12/cmake-build-debug/
 /Blatt13/cmake-build-debug/
+
+Blatt1/.idea/
+Blatt2/.idea/
+Blatt3/.idea/
+Blatt4/.idea/
+Blatt5/.idea/
+Blatt6/.idea/
+Blatt7/.idea/
+Blatt8/.idea/
+Blatt9/.idea/
+Blatt10/.idea/
+Blatt11/.idea/
+Blatt12/.idea/
+Blatt13/.idea/
+.idea/
+/Test/cmake-build-debug/
