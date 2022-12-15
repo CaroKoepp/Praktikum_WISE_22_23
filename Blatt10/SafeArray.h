@@ -4,7 +4,7 @@
 
 class SafeArray {
 public:
-    bool setAt(int val, int pos);
+    bool setAt(int pos, int val);
     int getAt(int pos);
     int getMinimum();
     bool setAt(int val, int p1, int p2);

@@ -1,10 +1,11 @@
 #include <iostream>
 #include <time.h>
+#include "Stack.h"
 using namespace std;
-
 //Aufgabe 1 + 2: Siehe Aufg. 9
 int* userEingabe(){
     static int userEingabe[6];
+    cout << "Bitte  6 verschiedene Zahlen zwischen 1 und 49 eingeben" << endl;
     for(int i = 0; i<6; i++){
         cout << "Bitte Zahl " << i+1 << " eingeben: " << endl;
         cin >> userEingabe[i];
@@ -18,7 +19,7 @@ int* zieheGZ(){
     int gezogeneZahl;
     bool istImArray = false;
     while(anzGezogeneZahlen <6){
-        gezogeneZahl = 1 + rand()%50;
+        gezogeneZahl = 1 + rand()%49;
         for(int i = 0; i<6; i++){
             if(gezogZahlen[i] == gezogeneZahl){
                 istImArray = true;
@@ -39,7 +40,7 @@ int* zieheLZ(){
     int gezogeneZahl;
     bool istImArray = false;
     while(anzGezogeneZahlen <6){
-        gezogeneZahl = 1 + rand()%50;
+        gezogeneZahl = 1 + rand()%49;
         for(int i = 0; i<6; i++){
             if(lottozahlen[i] == gezogeneZahl){
                 istImArray = true;
@@ -71,10 +72,19 @@ void printArray(int* arr){
     cout << endl;
 }
 
+/*void handleKlammer(char k){
+    if((s.top() == '(' and k ==')') or (s.top() == '{' and k =='}') or (s.top() == '[' and k ==']')){
+        s.pop();
+    }
+    else{
+        s.push(k);
+    }
+}*/
+
 int main() {
     srand(time(0));
     //int* getippteZahlen = userEingabe();
-    //int* lottozahlen = ziehe();
+    //int* lottozahlen = zieheLZ();
     //int richtige = auswertung(lottozahlen, getippteZahlen);
     //cout << "Anzahl richtige Zahlen: " << richtige << endl;
 
@@ -83,7 +93,7 @@ int main() {
     int anzRichtige = 0;
     int* gezogZ;
 
-    int *lottozahlen = zieheLZ() ;
+    int *lottozahlen = zieheLZ();
     printArray(lottozahlen);
     while(anz3Richtige < 5 and versuche <100000){
         versuche++;
@@ -95,4 +105,7 @@ int main() {
         }
     }
     cout <<" Anzahl Versuche: " << versuche << endl;
+
+
+
 }

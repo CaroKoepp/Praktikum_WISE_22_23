@@ -3,4 +3,4 @@ project(Blatt11)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Blatt11 Blatt11_3.cpp)
+add_executable(Blatt11 Blatt11_3.cpp Stack.cpp Stack.h)

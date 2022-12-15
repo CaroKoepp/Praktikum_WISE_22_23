@@ -9,6 +9,7 @@ Node::Node(int value){ // Konstruktor
     this->next = NULL;
 }
 Node::~Node(){} // Destruktor
+
 int Node::length(){
     Node* n = this;
     int ret = 0;
@@ -17,6 +18,7 @@ int Node::length(){
     }
     return ret;
 }
+
 void Node::insert(int value){ // Erzeuge einen neuen Knoten
     Node *n = new Node(value); // und hänge diesen an den
     n->next = this->next; // aktuellen "this" Knoten

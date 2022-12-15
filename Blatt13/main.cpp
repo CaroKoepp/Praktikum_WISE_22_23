@@ -1,6 +1,6 @@
 #include <iostream>
-
+#include "Stack.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Stack s(3);
     return 0;
 }
