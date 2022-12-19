@@ -10,9 +10,11 @@ class Node {
 private:
     int value; // Wert des Listenelementes
     Node *next; // Zeiger auf das nächste Listenelement
+    void sort();
 // NULL, bei Ende der Liste
 public:
     void insert(int value); // Einfügen eines Knotens
+    void insertSort(int value);
     Node* remove(int value); // Lösche den Knoten mit Wert value
     void print();
     int length();
