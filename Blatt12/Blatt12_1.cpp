@@ -41,6 +41,7 @@ int main() {
     fin.close();
     for(int i = 0; i<18; i++){
         printInDatei(Tabelle[i]);
+        print(Tabelle[i]);
     }
     return 0;
 }

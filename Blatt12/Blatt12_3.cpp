@@ -45,13 +45,13 @@ int vergleicheChar( const char *s, const char *m){
     return anz;
 }
 
-int main(){
+/*int main(){
     string s1 = "Dies ist ein beispieltext";
     string s2 = "ie";
 
     char c1[] = "Dies ist ein beispieltext";
     char c2[] = "ie";
-
+    double start =
     cout <<"Strings: " << s2 <<  " kommt " << vergleicheString(s1, s2)<<" mal in " << s1 << " vor." <<endl;
     cout <<"Char Array: "<< c2 <<  " kommt " << vergleicheString(c1, c2)<<" mal in " << c1 << " vor." <<endl;
-}
+}*/

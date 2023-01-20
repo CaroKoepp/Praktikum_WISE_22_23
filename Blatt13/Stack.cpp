@@ -3,6 +3,8 @@
 using namespace std;
 Stack::Stack(int n) {
     content = new char[n];
+    maxSize = n;
+    aSize = 0;
 }
 
 bool Stack::empty(){
@@ -16,27 +18,29 @@ bool Stack::empty(){
 
 void Stack::pop() {
     if(aSize>0){
-        //content[aSize-1] = '\0';
         aSize--;
     }
 }
 
 void  Stack::push(char c) {
-    int contentSize = (sizeof(content)/sizeof(char));
-    if(aSize >= contentSize ){
+    cout << aSize << " " <<maxSize << endl;
+    if(aSize >= maxSize ){
+        cout << "expanding content" << endl;
         expandContent();
+
     }
     content[aSize] = c;
     aSize++;
 }
 
 void Stack::expandContent() {
-    int contentSize = (sizeof(content)/sizeof(char));
-    char* expContent = new char[2*contentSize];
-    for(int i = 0; i<contentSize; i++){
+
+    char* expContent = new char[2*maxSize];
+    for(int i = 0; i<maxSize; i++){
         expContent[i] = content[i];
     }
-    delete content;
+    delete[] content;
+    maxSize = 2* maxSize;
     content = expContent;
 
 }
@@ -62,5 +66,5 @@ void Stack::clear() {
 }
 
 Stack::~Stack(){
-    delete content;
+    delete[] content;
 };

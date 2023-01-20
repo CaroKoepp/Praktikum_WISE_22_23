@@ -4,11 +4,17 @@
 
 #include <cstddef>
 #include "Node.h"
+#include <iostream>
+using namespace  std;
+
 Node::Node(int value){ // Konstruktor
     this->value = value;
     this->next = NULL;
+    isSorted = false;
 }
-Node::~Node(){} // Destruktor
+Node::~Node(){
+    delete this->next;
+} // Destruktor
 
 int Node::length(){
     Node* n = this;
@@ -21,6 +27,7 @@ int Node::length(){
 }
 
 void Node::insert(int value){ // Erzeuge einen neuen Knoten
+    isSorted = false;
     Node *n = new Node(value); // und hänge diesen an den
     Node *pos = this;
     while(pos->next != NULL){
@@ -50,12 +57,27 @@ void Node::sort(){
 }
 
 void Node::insertSort(int v) {
-    this->sort();
+    if(!isSorted){
+        this->sort();
+        isSorted = true;
+    }
     Node *pos = this;
     while(pos->value < v && pos->next != NULL){
+        if(pos->value == v){
+            break;
+        }
         pos = pos->next;
     }
     Node *n = new Node(v);
     n->next = pos->next;
     pos->next = n;
+}
+
+void Node::print() {
+    Node* n = this;
+    int s = this->length();
+    for(int i = 0; i<s; i++){
+        cout << n->value << endl;
+        n = n->next;
+    }
 }

@@ -8,6 +8,7 @@
 
 class Node {
 private:
+    bool isSorted;
     int value; // Wert des Listenelementes
     Node *next; // Zeiger auf das nächste Listenelement
     void sort();

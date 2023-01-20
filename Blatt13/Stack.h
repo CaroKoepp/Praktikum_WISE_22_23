@@ -8,6 +8,7 @@
 
 class Stack {
     int aSize;
+    int maxSize;
     char* content;
     void expandContent();
 public:
